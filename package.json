@@ -1,0 +1,28 @@
+{
+  "name": "generator-leyoubird",
+  "version": "0.0.1",
+  "description": "yeoman脚手架学习",
+  "main": "index.js",
+  "files": [
+    "app"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echoloyuk/generator-leyoubird.git"
+  },
+  "author": "machi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/echoloyuk/generator-leyoubird/issues"
+  },
+  "homepage": "https://github.com/echoloyuk/generator-leyoubird#readme",
+  "dependencies": {
+    "yeoman-generator": "^1.1.1"
+  }
+}
