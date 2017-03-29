@@ -13,8 +13,24 @@ module.exports = class extends Generator {
   method1() {
     this.log('method 1 just ran');
   }
-
   method2() {
-    this.log('method 2 just ran');
+    const name = this.config.get('name');
+    if (!name) {
+      this.prompt({
+        type: 'input',
+        name: 'name',
+        message: 'what is your name?',
+        default: this.name,
+        store: false
+      }).then((answer) => {
+        this.log('your name is', answer.name);
+        this.log('I will memory your name');
+        this.config.set({
+          name: answer.name
+        })
+      });
+    } else {
+      this.log('I know you! You are', name);
+    }
   }
 };
